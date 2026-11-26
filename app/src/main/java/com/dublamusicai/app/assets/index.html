@@ -1,0 +1,19 @@
+<!doctype html><html lang="pt-br"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DUBLA MUSIC AI</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#090914;color:#f5f3ff;font-family:Arial,sans-serif;padding:22px}
+header{padding:18px;border:1px solid #673cff;border-radius:18px;background:linear-gradient(135deg,#21104a,#10152c)}
+h1{margin:0;color:#b99aff;font-size:25px}p{color:#c7c3d8;line-height:1.5}.card{margin-top:18px;padding:18px;background:#151526;border:1px solid #34304e;border-radius:16px}
+button{background:#743cff;color:white;border:0;padding:13px 16px;border-radius:12px;font-weight:bold;margin-top:10px;width:100%}
+input,select{width:100%;padding:12px;margin-top:8px;border-radius:10px;border:1px solid #50466f;background:#0d0d1b;color:white}
+small{color:#aaa3c2}audio{width:100%;margin-top:12px}
+</style></head><body>
+<header><h1>DUBLA MUSIC AI</h1><p>Seu espaço para preparar músicas para dublagem.</p></header>
+<section class="card"><h3>1. Importar áudio</h3><input id="audio" type="file" accept="audio/*"><audio id="preview" controls></audio></section>
+<section class="card"><h3>2. Configurações</h3><label>Idioma de destino</label><select id="lang"><option>Português</option><option>English</option><option>Español</option><option>日本語</option><option>Français</option><option>한국어</option></select>
+<label>Tipo de voz</label><select id="voice"><option>Feminina sintética</option><option>Masculina sintética</option><option>Neutra sintética</option></select>
+<p><small>Esta versão permite importar e ouvir o áudio. A tradução e a geração de voz cantada ainda precisam ser conectadas ao servidor de IA.</small></p></section>
+<section class="card"><h3>3. Próximas etapas</h3><p>Transcrição, tradução, adaptação ao ritmo e geração de voz cantada serão adicionadas nas próximas versões.</p><p><small>Use somente arquivos de áudio que você tenha autorização para processar. Não há anúncios nem limite artificial de dublagens; a capacidade dependerá da infraestrutura conectada.</small></p></section>
+<script>
+const f=document.getElementById('audio'),p=document.getElementById('preview');
+f.addEventListener('change',()=>{if(f.files[0])p.src=URL.createObjectURL(f.files[0])});
+</script></body></html>
