@@ -1,0 +1,14 @@
+DUBLA MUSIC AI — projeto Android inicial (0.3)
+
+Este pacote contém o código-fonte Android e o fluxo GitHub Actions para compilar um APK de teste.
+Não é o APK pronto.
+
+Como enviar ao GitHub pelo celular:
+1. Extraia este ZIP no seu dispositivo, se o gerenciador de arquivos permitir.
+2. No repositório, use Add file > Upload files.
+3. Envie os arquivos e pastas que estão dentro de DUBLA_MUSIC_AI_GITHUB (incluindo a pasta oculta .github).
+4. Faça Commit changes na branch main.
+5. Abra a aba Actions e aguarde o fluxo Build Android APK terminar.
+6. Abra a execução concluída e baixe o artefato DUBLA-MUSIC-AI-APK.
+
+Observação: esta é uma versão inicial de interface e seleção/preview de áudio. Ainda não inclui IA real de transcrição, tradução, síntese de canto nem exportação final. O APK de teste não foi compilado neste ambiente.
